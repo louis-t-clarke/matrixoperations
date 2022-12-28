@@ -13,14 +13,14 @@ def K(n): #creates clique of size n
         K.append(row)
     return K
 
-def One(a,b):
+def One(a,b): #creates axb matrix of 1s
     K = []
     for i in range(a):
         row = [1]*b
         K.append(row)
     return K
 
-def MatSym(M):
+def MatSym(M): #symmetrises matrix, mirroring lower diagonal to upper
     row = -1
     for i in M:
         row += 1
